@@ -1,4 +1,5 @@
 let randomNum = Math.floor(Math.random() * 10 + 1);
+console.log(randomNum);
 
 let index = 0;
 let btnguess = document.getElementById("btnguess");
@@ -19,10 +20,12 @@ function guessNum() {
     txtHint.innerHTML = " Guess a higher one ..  ";
   } else {
     index++;
-    txtHint.innerHTML = "Congratulations..! You won the Game...  ";
+    txtHint.innerHTML = "🎉Congratulations🎉..! You won the Game...🏆  ";
+  
     txtRound.innerHTML = " ";
     btnNewGame.disabled = false;
     btnguess.disabled = true;
+    document.body.style.backgroundImage="url(assets/firework-7791.gif)"
   }
   console.log(index);
 }
@@ -32,7 +35,8 @@ function reload() {
 }
 function round(index) {
   if (index == 3) {
-    txtRound.innerHTML = "Game over..You have No more Chances..!!";
+    txtRound.innerHTML = "Game over..You have No more Chances..The hidden number is "+randomNum;
+    
     btnguess.disabled = true;
     btnNewGame.disabled = false;
   } else if (index < 3) {

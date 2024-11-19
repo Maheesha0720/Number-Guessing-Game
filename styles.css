@@ -1,8 +1,17 @@
+body{
+    background-color: rgb(56, 55, 55);
+    
+}
+
 .container{
     border: solid 1px ;
     width: 400px;;
     padding: 30px; 
     border-radius: 15px;
+    background-color: rgba(7, 7, 7, 0.649);
+    opacity: 92%;
+    margin: auto;
+    margin-top: 100px;
 }
 .number{
     width: 70px;
@@ -11,7 +20,6 @@
     font-size: 25px;
     margin: 10px;
 
-
 }
 .btn-guess{
     width: 100px;
@@ -19,7 +27,13 @@
     margin: 10px;
     border-radius: 25px;
     border: solid 2px white;
+    background-color: rgb(244, 138, 67);
+    font-size: 18px;
 
+}
+.btn-guess:disabled{
+    background-color:rgb(253, 183, 136);
+    cursor: not-allowed;
 }
 .bar{
     text-align: center;
@@ -36,7 +50,14 @@
     height: 40px;
     border-radius: 25px;
     border: solid 2px white;
+    background-color: rgb(244, 137, 66);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
 
+}
+#btnNew:disabled{
+    cursor: not-allowed;
+    background-color:rgb(253, 183, 136);
 }
 .hints{
   margin: auto;
@@ -45,4 +66,7 @@
   text-align: center;
   height: 70px;
   justify-content: center;
+}
+label{
+    color: white;
 }
